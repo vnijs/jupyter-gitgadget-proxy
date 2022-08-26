@@ -19,12 +19,15 @@ def setup_gitgadget() -> Dict[str, Any]:
             os.path.dirname(os.path.abspath(__file__)), "icons", "gitgadget.svg"
         )
 
-    return {
-        "command": [
+    def _gitgadget_command(port):
+        return [
             "/usr/local/bin/R",
             "-e",
             f"options(gitgadget.jupyter=TRUE); gitgadget::gitgadget(host='0.0.0.0', port={port}, launch.browser=FALSE)",
-        ],
+        ]
+
+    return {
+        "command": _gitgadget_command,
         "timeout": 30,
         "new_browser_tab": True,
         "launcher_entry": {"title": "GitGadget", "icon_path": _get_icon_path()},
