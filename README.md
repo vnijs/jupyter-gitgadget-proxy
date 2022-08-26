@@ -13,7 +13,7 @@ Launch GitGadget Notebook from the Jupyter Lab `Launcher`. This package was buil
 1. Fork and clone this repo and install the package:
 
 ```bash
-git clone https://github.com/<account>/jupyter-pluto-proxy
+git clone https://github.com/vnijs/jupyter-gitgadget-proxy
 ```
 ## Credits
 
