@@ -1,4 +1,4 @@
-# Jupyter Server Proxy + Pluto.jl
+# Jupyter Server Proxy + GitGadget
 
 Launch the awesome Pluto.jl Notebook from the Jupyter Lab `Launcher` or the Jupyter Classic `New` dropdown. This package was built using the [`jupyter-server-proxy` cookiecutter template](https://github.com/illumidesk/cookiecutter-jupyter-server-proxy).
 
